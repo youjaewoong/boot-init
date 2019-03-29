@@ -17,6 +17,9 @@ public class SpringApplicationRunnerListner implements ApplicationRunner {
 	
 	@Autowired
 	JaewoongProperties jaewoongProperties;
+	
+	@Autowired
+	private String hello;
 	 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
@@ -26,13 +29,15 @@ public class SpringApplicationRunnerListner implements ApplicationRunner {
 		System.out.println("===============");
 		System.out.println(name);
 		System.out.println(age);
-		System.out.println("===============");
 		
 		System.out.println("=====jaewoongProperties======");
 		System.out.println(jaewoongProperties.getName());
 		System.out.println(jaewoongProperties.getAge());
 		System.out.println(jaewoongProperties.getFullName());
 		System.out.println(jaewoongProperties.getSessionTimeout());
+		
+		System.out.println("=====profile======");
+		System.out.println(hello);
 	}
 	
 }
