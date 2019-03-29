@@ -22,8 +22,8 @@ public class SpringbootExampleInitApplicationTests extends TestCase{
 	
 	@Test
 	public void contextLoads() {
-		assertThat(environment.getProperty("keesun.name"))
-		.isEqualTo("keesun2");
+		assertThat(environment.getProperty("jaewoong.name"))
+		.isEqualTo("jaewoong");
 	}
 
 }
